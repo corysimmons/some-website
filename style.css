@@ -1,49 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: sans-serif;
+  line-height: 1.75;
+}
+
 .page {
-  background: #ddd;
+  background: rgb(242, 242, 244);
+  padding: 20px;
 }
 
-h1 {
-  font-size: 30px;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-direction: column;
 }
 
-#my-title {
-  font-size: 100px;
+.card {
+  background: white;
+  overflow: hidden;
+  flex: 1;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,10,.2);
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
 }
 
 .card-title {
   font-weight: bold;
   font-family: sans-serif;
   font-size: 20px;
+  line-height: 1.2;
   margin-bottom: 10px;
-  display: inline-block;
-
-  color: blue;
 }
 
-/* .card-title--danger {
-  font-weight: bold;
-  font-family: sans-serif;
-  font-size: 20px;
-  margin-bottom: 10px;
+.card-text {
+  margin-bottom: 20px;
+  color:rgb(95, 98, 108);
+}
 
-  color: red;
-} */
+.card-link {
+  margin-top: auto;
+  background: rgb(62, 105, 247);
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+  max-width: 200px;
+  transition: all 200ms ease;
+}
 
-.card {
-  background: white;
-  border: 2px solid black;
-  margin: 20px;
-  padding: 20px;
-  overflow: hidden;
+.card-link:hover {
+  background: rgb(73, 115, 255);
 }
 
 @media (min-width: 800px) {
-  h1 {
-    font-size: 60px;
+  .cards {
+    max-width: 500px;
+    flex-direction: row;
   }
 
-  .card {
-    max-width: 500px;
-    margin: auto;
+  .page {
+    padding: 60px;
   }
 }
