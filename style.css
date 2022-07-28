@@ -1,12 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-:root {
-  font-family: sans-serif;
-  line-height: 1.75;
-}
-
 .page {
   background: rgb(242, 242, 244);
   padding: 20px;
@@ -39,12 +30,20 @@
   margin-bottom: 10px;
 }
 
-.card-text {
-  margin-bottom: 20px;
-  color:rgb(95, 98, 108);
+.card-title--secondary {
+  color:rgb(62, 105, 247)
 }
 
-.card-link {
+.card-text {
+  color:rgb(95, 98, 108);
+  margin-bottom: 20px;
+}
+
+.card-text--no-space-after {
+  margin-bottom: 0;
+}
+
+.card-button {
   margin-top: auto;
   background: rgb(62, 105, 247);
   color: white;
@@ -55,15 +54,18 @@
   font-size: 14px;
   max-width: 200px;
   transition: all 200ms ease;
+  border: 0;
+  cursor: pointer;
+  font-size: 100%;
 }
 
-.card-link:hover {
+.card-button:hover {
   background: rgb(73, 115, 255);
 }
 
 @media (min-width: 800px) {
   .cards {
-    max-width: 500px;
+    max-width: 860px;
     flex-direction: row;
   }
 

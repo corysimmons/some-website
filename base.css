@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: sans-serif;
+  line-height: 1.75;
+}
+
+p {
+  color: red;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
